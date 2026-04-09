@@ -18,7 +18,7 @@
     },
     "input": "https://github.com/openai/codex/tree/main/docs",
     "execution": {
-      "stdout": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compat\u00edvel com conector estrito\",\n  \"search_query_hint\": null\n}\n",
+      "stdout": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compatível com conector estrito\",\n  \"search_query_hint\": null\n}\n",
       "stderr": "",
       "returncode": 0
     },
@@ -31,9 +31,12 @@
     "proof_hash": "163b775700d0c161721f1bb086e3d124e438cdda16a5639566ace5ec199217a9",
     "artifact_summary": {
       "input": "https://github.com/openai/codex/tree/main/docs",
-      "classification": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compat\u00edvel com conector estrito\",\n  \"search_query_hint\": null\n}"
+      "classification": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compatível com conector estrito\",\n  \"search_query_hint\": null\n}"
     },
     "entry_hash": "0ae5259b4170f1a71c3173cb0950a02a38fa2b6b1c48ccc156e62d1d2a1c7301"
   },
-  "merkle_root": "d02452658322c109e744d66816a55e4da73c11dd0b17ea4fb9bf8b19a8cb5cea"
+  "merkle_root": "d02452658322c109e744d66816a55e4da73c11dd0b17ea4fb9bf8b19a8cb5cea",
+  "anchor": {
+    "error": "{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}"
+  }
 }
