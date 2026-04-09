@@ -1,13 +1,25 @@
 {
-  "input_url": "https://github.com/repos?q=admin%3A%40me",
-  "is_github": true,
-  "classification": "search_url",
-  "owner": null,
-  "repo": null,
-  "branch": null,
-  "path": null,
-  "is_valid_for_strict_connector": false,
-  "canonical_url": null,
-  "reason": "URL de busca não é aceita como URL canônica de repositório",
-  "search_query_hint": "admin:@me"
+  "version": "1.0.0",
+  "timestamp": "2026-04-09T22:36:08.871461Z",
+  "environment": {
+    "python_version": "3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]",
+    "os": "linux"
+  },
+  "git": {
+    "commit": "b01b503c21593357032a89e129ab59dd263476d0",
+    "remote": "https://github.com/MatVerse-py/github-url-validator.git"
+  },
+  "artifacts": {
+    "script": {
+      "path": "github_url_validator.py",
+      "sha256": "78b4a874082dc830f8663d897f6e55ca49cef126e59b5cc7cf3214404dd00dd2"
+    }
+  },
+  "input": "https://github.com/repos?q=admin%3A%40me",
+  "execution": {
+    "stdout": "{\n  \"input_url\": \"https://github.com/repos?q=admin%3A%40me\",\n  \"is_github\": true,\n  \"classification\": \"search_url\",\n  \"owner\": null,\n  \"repo\": null,\n  \"branch\": null,\n  \"path\": null,\n  \"is_valid_for_strict_connector\": false,\n  \"canonical_url\": null,\n  \"reason\": \"URL de busca n\u00e3o \u00e9 aceita como URL can\u00f4nica de reposit\u00f3rio\",\n  \"search_query_hint\": \"admin:@me\"\n}\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  "proof_hash": "b78383604cf5b93a050e92960f5aadd57d519c91292563055d8b15dc2fe58d21"
 }
