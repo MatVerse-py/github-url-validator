@@ -1,0 +1,13 @@
+{
+  "input_url": "https://github.com/repos?q=admin%3A%40me",
+  "is_github": true,
+  "classification": "search_url",
+  "owner": null,
+  "repo": null,
+  "branch": null,
+  "path": null,
+  "is_valid_for_strict_connector": false,
+  "canonical_url": null,
+  "reason": "URL de busca não é aceita como URL canônica de repositório",
+  "search_query_hint": "admin:@me"
+}
