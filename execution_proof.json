@@ -37,6 +37,12 @@
   },
   "merkle_root": "d02452658322c109e744d66816a55e4da73c11dd0b17ea4fb9bf8b19a8cb5cea",
   "anchor": {
-    "error": "{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}"
+    "error": "{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free.'}",
+    "status": "anchored",
+    "network": "sepolia",
+    "tx_hash": "0eba48e11572ae243a22a04ed116f0d80fb2722e7616dfa4e60afb3e57a77c2d",
+    "address": "0x5e3451Dd4783F026cD9af10a46B9DBb99FedeD79",
+    "merkle_root": "d02452658322c109e744d66816a55e4da73c11dd0b17ea4fb9bf8b19a8cb5cea",
+    "explorer_url": "https://sepolia.etherscan.io/tx/0eba48e11572ae243a22a04ed116f0d80fb2722e7616dfa4e60afb3e57a77c2d"
   }
 }

@@ -6,7 +6,7 @@ from eth_account import Account
 
 def anchor_merkle_root(merkle_root):
     # Sepolia RPC (using a public one for demonstration)
-    rpc_url = "https://rpc.ankr.com/eth_sepolia"
+    rpc_url = "https://ethereum-sepolia-rpc.publicnode.com"
     w3 = Web3(Web3.HTTPProvider(rpc_url))
     
     private_key = os.getenv("SEPOLIA_PRIVATE_KEY")
