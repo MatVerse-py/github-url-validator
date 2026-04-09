@@ -4,6 +4,7 @@ import json
 import sys
 import os
 from datetime import datetime
+from matverse_ledger import MatVerseLedger
 
 def run_script(script_path, test_input):
     try:
@@ -40,7 +41,7 @@ def generate_proof(script_path, test_input):
     git_info = get_git_info()
     
     proof = {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "timestamp": datetime.utcnow().isoformat() + "Z",
         "environment": {
             "python_version": sys.version,
@@ -65,15 +66,29 @@ def generate_proof(script_path, test_input):
 
 if __name__ == "__main__":
     script = "github_url_validator.py"
-    test_url = "https://github.com/repos?q=admin%3A%40me"
+    test_url = sys.argv[1] if len(sys.argv) > 1 else "https://github.com/repos?q=admin%3A%40me"
 
     if not os.path.exists(script):
         print(f"Error: {script} not found")
         sys.exit(1)
 
+    # 1. Generate Proof
     proof = generate_proof(script, test_url)
+    
+    # 2. Append to Ledger
+    ledger = MatVerseLedger()
+    entry = ledger.append(proof)
+    
+    # 3. Final Artifact
+    final_artifact = {
+        "proof": proof,
+        "ledger_entry": entry,
+        "merkle_root": ledger.get_merkle_root()
+    }
 
     with open("execution_proof.json", "w") as f:
-        json.dump(proof, f, indent=2)
+        json.dump(final_artifact, f, indent=2)
 
-    print(f"Proof generated successfully. Hash: {proof['proof_hash']}")
+    print(f"Proof generated and anchored to ledger.")
+    print(f"Proof Hash: {proof['proof_hash']}")
+    print(f"Merkle Root: {final_artifact['merkle_root']}")

@@ -1,25 +1,39 @@
 {
-  "version": "1.0.0",
-  "timestamp": "2026-04-09T22:36:08.871461Z",
-  "environment": {
-    "python_version": "3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]",
-    "os": "linux"
+  "proof": {
+    "version": "1.1.0",
+    "timestamp": "2026-04-09T22:40:13.460155Z",
+    "environment": {
+      "python_version": "3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]",
+      "os": "linux"
+    },
+    "git": {
+      "commit": "de5f862ef77fb21c2fbe77c7f950f038b621f9cf",
+      "remote": "https://github.com/MatVerse-py/github-url-validator.git"
+    },
+    "artifacts": {
+      "script": {
+        "path": "github_url_validator.py",
+        "sha256": "78b4a874082dc830f8663d897f6e55ca49cef126e59b5cc7cf3214404dd00dd2"
+      }
+    },
+    "input": "https://github.com/openai/codex/tree/main/docs",
+    "execution": {
+      "stdout": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compat\u00edvel com conector estrito\",\n  \"search_query_hint\": null\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "proof_hash": "163b775700d0c161721f1bb086e3d124e438cdda16a5639566ace5ec199217a9"
   },
-  "git": {
-    "commit": "b01b503c21593357032a89e129ab59dd263476d0",
-    "remote": "https://github.com/MatVerse-py/github-url-validator.git"
+  "ledger_entry": {
+    "index": 1,
+    "timestamp": "2026-04-09T22:40:13.460392Z",
+    "prev_hash": "8ae38ba3e04657dc8f84672fffcdb853102e7908d459895ae7682d893ba93a4d",
+    "proof_hash": "163b775700d0c161721f1bb086e3d124e438cdda16a5639566ace5ec199217a9",
+    "artifact_summary": {
+      "input": "https://github.com/openai/codex/tree/main/docs",
+      "classification": "{\n  \"input_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"is_github\": true,\n  \"classification\": \"repo_tree_url\",\n  \"owner\": \"openai\",\n  \"repo\": \"codex\",\n  \"branch\": \"main\",\n  \"path\": \"docs\",\n  \"is_valid_for_strict_connector\": true,\n  \"canonical_url\": \"https://github.com/openai/codex/tree/main/docs\",\n  \"reason\": \"URL compat\u00edvel com conector estrito\",\n  \"search_query_hint\": null\n}"
+    },
+    "entry_hash": "0ae5259b4170f1a71c3173cb0950a02a38fa2b6b1c48ccc156e62d1d2a1c7301"
   },
-  "artifacts": {
-    "script": {
-      "path": "github_url_validator.py",
-      "sha256": "78b4a874082dc830f8663d897f6e55ca49cef126e59b5cc7cf3214404dd00dd2"
-    }
-  },
-  "input": "https://github.com/repos?q=admin%3A%40me",
-  "execution": {
-    "stdout": "{\n  \"input_url\": \"https://github.com/repos?q=admin%3A%40me\",\n  \"is_github\": true,\n  \"classification\": \"search_url\",\n  \"owner\": null,\n  \"repo\": null,\n  \"branch\": null,\n  \"path\": null,\n  \"is_valid_for_strict_connector\": false,\n  \"canonical_url\": null,\n  \"reason\": \"URL de busca n\u00e3o \u00e9 aceita como URL can\u00f4nica de reposit\u00f3rio\",\n  \"search_query_hint\": \"admin:@me\"\n}\n",
-    "stderr": "",
-    "returncode": 0
-  },
-  "proof_hash": "b78383604cf5b93a050e92960f5aadd57d519c91292563055d8b15dc2fe58d21"
+  "merkle_root": "d02452658322c109e744d66816a55e4da73c11dd0b17ea4fb9bf8b19a8cb5cea"
 }
